@@ -34,7 +34,9 @@ public class MainScrapper {
 					//System.out.println("Fila      "+filas.get(i).html());
 					if ((i>7) && (i<44)){
 						if ((j==0) || (j==1) || (j==7) || (j==8)) {
-							System.out.print(" -  "+cols.get(j).text());
+							if (cols.get(j).text()!=null) {
+								System.out.print(" -  "+cols.get(j).text());
+							}
 						}
 					}
 				}
